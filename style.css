@@ -1,0 +1,220 @@
+* {
+  transition: all 0.4s ease;
+}
+
+/* Reset styles */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+a,
+img,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Improved display of elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Styling links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Base styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 1.17em;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1em;
+}
+
+/* Lists */
+ul,
+ol {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  list-style: none;
+}
+
+/* Styling images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Block elements */
+div {
+  margin-bottom: 1em;
+}
+
+/* Styling buttons */
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Form elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+/* Form group */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+legend {
+  font-weight: bold;
+}
+
+/* Center alignment */
+.center {
+  text-align: center;
+}
+
+/* Semi-transparent background */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Grid layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col {
+  float: left;
+  width: 100%;
+}
+
+#coolInput {
+  margin: 50px 0;
+}
+
+#theList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.listItem {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bigFont {
+  font-size: 50px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}
