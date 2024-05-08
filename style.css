@@ -67,15 +67,7 @@ body {
 
 /* Headings */
 h1 {
-  font-size: 4em;
-  margin-bottom: 0.5em;
-}
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-}
-h3 {
-  font-size: 1.17em;
+  font-size: 2em; /* Adjusted font size for responsiveness */
   margin-bottom: 0.5em;
 }
 
@@ -160,6 +152,10 @@ legend {
   text-align: center;
 }
 
+.mt1 {
+  margin-top: 1em;
+}
+
 /* Semi-transparent background */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -172,16 +168,18 @@ legend {
 
 /* Grid layout */
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .col {
   float: left;
   width: 100%;
@@ -193,8 +191,9 @@ legend {
 
 #theList {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 15px;
+  margin: 0;
 }
 
 .listItem {
@@ -205,16 +204,20 @@ legend {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.bigFont {
-  font-size: 50px;
-}
-
 ::-webkit-scrollbar {
   display: none;
+}
+
+.bigFont {
+  font-size: 30px; /* Adjusted font size for responsiveness */
 }
 
 @media (min-width: 768px) {
   .col {
     width: 50%;
+  }
+
+  #theList {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
